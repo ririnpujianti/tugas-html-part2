@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Hadir</title>
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        th,
+        td {
+            width: 25%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Daftar Hadir</h3>
+    <form action="#" method="post">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama"><br><br>
+
+        <label>Keterangan:</label>
+        <input type="radio" id="hadir" name="keterangan" value="hadir">
+        <label for="hadir">Hadir</label>
+        <input type="radio" id="tidak-hadir" name="keterangan" value="tidak hadir">
+        <label for="tidak-hadir">Tidak Hadir</label><br><br>
+
+        <button type="submit">Tambah</button>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th rowspan="2">No</th>
+            <th rowspan="2">Nama</th>
+            <th colspan="2">Keterangan</th>
+            
+        </tr>
+        <tr>
+            <th>Hadir</th>
+            <th>Tidak Hadir</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Alfin</td>
+            <td>100%</td>
+            <td>0%</td>
+        </tr>
+    </table>
+</body>
+
+</html>
